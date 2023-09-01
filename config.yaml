@@ -1,0 +1,15 @@
+host: 0.0.0.0
+mysql:
+    db: tableName
+    host: 127.0.0.1
+    password: 123456
+    port: 3306
+    user: root
+port: 8080
+redis:
+    db: 0
+    expire_hour: 12
+    host: 127.0.0.1
+    password: 123456
+    pool_size: 10
+    port: 6379
