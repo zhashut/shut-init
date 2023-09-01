@@ -3,6 +3,7 @@ package initialize
 import (
 	"github.com/gin-gonic/gin"
 	"go-init/middlewares"
+	"go-init/routers"
 )
 
 /**
@@ -16,6 +17,7 @@ import (
 func Router() *gin.Engine {
 	r := gin.Default()
 	r.Use(middlewares.Cors())
-	_ = r.Group("/api")
+	api := r.Group("/api")
+	routers.InitUser(api)
 	return r
 }

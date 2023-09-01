@@ -4,8 +4,8 @@ mysql:
     host: 127.0.0.1
     password: 123456
     port: 3306
-    user: root
     prefix: zhashut_
+    user: root
 port: 8080
 redis:
     db: 0
