@@ -13,6 +13,7 @@ type MySQLConfig struct {
 	Name     string `mapstructure:"db" json:"db"`
 	User     string `mapstructure:"user" json:"user"`
 	Password string `mapstructure:"password" json:"password"`
+	Prefix   string `mapstructure:"prefix" json:"prefix"`
 }
 
 type RedisConfig struct {

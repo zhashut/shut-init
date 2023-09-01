@@ -29,6 +29,7 @@ func InitDB() {
 		Logger: newLogger,
 		NamingStrategy: schema.NamingStrategy{
 			SingularTable: true, // 自动生成数据库表的时候表名不带s后缀
+			TablePrefix:   mysqlConfig.Prefix,
 		},
 	})
 	if err != nil {
